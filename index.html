@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+  <meta charset="utf-8">
+  <meta name="description"
+        content="First Frame Is the Place to Go for Video Content Customization">
+  <meta name="keywords" content="Video Content Customization, Video Generation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>First Frame Is the Place to Go for Video Content Customization</title>
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/index1.css">
+
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  
+  <style>
+    /* Improved spacing for video sections */
+    .prompt-box {
+      border: 2px solid #4a90e2;
+      border-radius: 8px;
+      padding: 15px;
+      background-color: #f8f9fa;
+      margin: 10px 0 20px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    /* Add significant spacing before each video title */
+    .content h2.title.is-5 {
+      margin-top: 80px !important;
+      margin-bottom: 25px !important;
+      padding-top: 50px;
+      border-top: 3px solid #dbdbdb;
+    }
+    
+    /* Remove top border and padding from first video */
+    .content h2.title.is-5:first-of-type {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 30px !important;
+    }
+    
+    /* Add spacing after video containers */
+    .columns.is-centered:has(video),
+    .columns.is-centered:has(img[alt^="Reference Image"]) {
+      margin-bottom: 30px;
+    }
+    
+    /* Ensure paragraph tags don't collapse margins */
+    p:has(h2.title.is-5) {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-size-2 publication-title">First Frame Is the Place to Go for Video Content Customization</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://codingrex.github.io/">Jingxi Chen</a><sup>1*†</sup>,
+              <a href="https://zli12321.github.io">Zongxia Li</a><sup>1*†</sup>,
+              <a href="https://www.linkedin.com/in/zhichaoliu00156999/">Zhichao Liu,</a> 
+              <a href="https://guangyaoshi.github.io">Guangyao Shi</a><sup>2</sup>,
+              <a href="https://wuxiyang1996.github.io">Xiyang Wu</a><sup>2</sup>,
+              <a href="https://fuxiaoliu.github.io">Fuxiao Liu</a><sup>2</sup>, 
+
+              <br>
+              <a href="http://users.umiacs.umd.edu/~fer/">Cornelia Fermüller</a><sup>1</sup>,
+              <a href="https://brandonyfeng.github.io/">Brandon Y. Feng</a><sup>3†</sup>,
+              <a href="https://robotics.umd.edu/clark/faculty/350/Yiannis-Aloimonos">Yiannis Aloimonos</a><sup>1</sup>
+
+
+
+              
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              
+              <span class="author-block"><sup>1</sup>University of Maryland, College Park,</span>
+              <span class="author-block"><sup>2</sup>University of Southern California,</span>
+              <span class="author-block"><sup>3</sup>Massachusetts Institute of Technology</span>
+
+              <br>
+
+              <span class="author-block">*Equal Contributions † Corresponding Author</span>
+              
+              
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <span class="link-block">
+                  <a href="https://arxiv.org/"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+              
+                <span class="link-block">
+                  <a href="https://github.com/zli12321/FFGO-Video-Customization"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                    </a>
+                </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+
+
+  <div class="columns is-centered">
+  
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <div class="column has-text-centered">
+          
+          <div class="columns is-centered">
+            <video id="dollyzoom" autoplay controls muted loop playsinline width=1280 height=720 controls>
+              <source src="./static/videos/cartoon_5.mp4"
+                      type="video/mp4">
+                      
+            </video>
+          </div>
+
+        
+
+          <h2 class="title is-3"> Abstract </h2>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: justify; padding: 30px 40px; line-height: 1.8; font-size: 18px; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+              What role does the first frame play in video generation models? Traditionally, it's viewed as the spatial-temporal starting point of a video, merely a seed for subsequent animation. In this work, we reveal a fundamentally different perspective: <strong style="background-color: #fff3cd; padding: 2px 6px; border-radius: 3px;">video models implicitly treat the first frame as a conceptual memory buffer that stores visual entities for later reuse during generation</strong>. Leveraging this insight, we show that it's possible to achieve <strong style="background-color: #d4edda; padding: 2px 6px; border-radius: 3px;">robust and generalized video content customization in diverse scenarios</strong>, using only <strong style="background-color: #f8d7da; padding: 2px 6px; border-radius: 3px;">20–50 training examples</strong> <strong style="background-color: #f8d7da; padding: 2px 6px; border-radius: 3px;">with no architectural changes or large-scale finetuning</strong>. This unveils a powerful, overlooked capability of video generation models for reference-based video customization.
+            </div>
+          </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="section">
+
+
+  <div class="columns is-centered">
+
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <div class="column has-text-centered">
+          <h2 class="title is-3"> Qualitative Comparison with Baselines</h2>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: 100px; text-align: center; padding: 10px;">
+              We compare our method against three strong baselines built on the Wan architecture with 14 billion parameters: Wan2.2-14B-I2V [28], VACE [12], and SkyReels-A2 [7]. 
+              Wan2.2-14B-I2V is our base I2V model, to which we apply our lightweight adaptation for invoking its innate subject mixing and scene transition capabilities.
+           </div>
+          </div>
+
+        <h2 class="title is-5">  <b> Generalized Multi-object Interactions: 3 References </b> </h2>
+        <div class="columns is-centered">
+          <div style="width: 1200px; height: 100px; text-align: center; padding: 10px;">
+            <strong>Text Prompt</strong>: "Professional-quality video with rich details. The
+            video features a charming Teddy Bear sipping
+            apple juice from a bottle using its hand, while
+            delicately holds a vibrant red rose using its
+            hand, admiring its beauty, perhaps as an
+            offering or a gesture of affection"
+         </div>
+        </div>
+
+          
+          
+          <video id="dollyzoom" autoplay controls muted loop playsinline width=1280 height=720 controls>
+
+            <source src="./static/videos/html_comp1.mp4"
+                    type="video/mp4">
+                    
+          </video>
+
+
+          <p>
+          <h2 class="title is-5">  <b> Excessive Number of References: 5 References </b> </h2>
+          </p>
+
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: 120px; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "A video scene unfolds in a vast, golden wheat
+              field under a blue sky, with a red smoke flare
+              billowing from a supply crate in the mid-ground.
+              In the foreground, the character Wukong, in his
+              ornate armor, stands next to a soldier wearing a
+              helmet and tactical gear. The soldier holds a
+              <span style="color: blue;">blue iPhone</span>, gesturing with it, while Wukong
+              holds a VR headset. The two characters are
+              positioned side-by-side, appearing to be in an
+              animated discussion, comparing and talking
+              about the two different technology products
+              they are holding."
+           </div>
+          </div>
+
+
+          <video id="dollyzoom" autoplay controls muted loop playsinline width=1280 height=720 control>
+            <source src="./static/videos/html_comp2.mp4"
+                    type="video/mp4">
+                    
+          </video>
+
+
+          <p>
+            <h2 class="title is-5"> <b>  Generalized Human-object Interactions Involving Multiple
+              Humans: 3 References </b> </h2>
+        </p>
+
+        <div class="columns is-centered">
+          <div style="width: 1200px; height: 90px; text-align: center; padding: 10px;">
+            <strong>Text Prompt</strong>: "A man wearing a short-sleeved shirt gently hands over a toy rocket to another man dressed in a black blazer over a dark graphic T-shirt. The man dressed in a black blazer looks at the rocket with mild curiosity and intrigue."
+         </div>
+        </div>
+        
+
+
+          <video id="dollyzoom" autoplay controls muted loop playsinline width=1280 height=720 control>
+            <source src="./static/videos/html_comp3.mp4"
+                    type="video/mp4">
+                    
+          </video>
+
+
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <div class="column has-text-centered">
+          <h2 class="title is-3">Results Across Diverse Applications</h2>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              For our 81-frame generated videos, the first 4 frames serve as subject-mixing inputs, aligned with the temporal compression ratio of the 3D VAE in Wan2.2-I2V-A14B, while the remaining 77 frames comprise the clean, customized video output.
+           </div>
+          </div>
+
+
+          <p>
+            <h2 class="title is-5"> <b> Video 1: Five-Character Anime Crossover (6 References) </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "The video begins with a wide shot of a cherry blossom-lined street, petals gently floating through the air as sunlight filters between the trees. Five iconic anime characters walk side by side from the distance toward the camera. On the far left, Naruto Uzumaki in an orange jumpsuit walks confidently with arms folded. Next to Naruto Uzumaki, Monkey D. Luffy wearing a red open shirt, blue shorts, and a straw hat smiles energetically, waving with one hand while a cheerful yellow creature, Pikachu, sits on his shoulder, flicking its tail with sparks of playful energy. To the right of Monkey D. Luffy, Goku with spiky black hair and a cheerful expression, wearing an orange martial arts gi with a blue undershirt, belt, wristbands, and boots. To the right of Goku,  Mario with a red cap featuring the letter "M," a matching red shirt, blue overalls with yellow buttons, white gloves, and brown shoes, is clapping while walking.  As they move closer, the camera slowly pans upward, capturing their friendly gestures and animated expressions under the falling petals. The motion and color transitions highlight a sense of camaraderie and lighthearted adventure against the serene spring backdrop."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/cartoon_5.png" alt="Reference Image 34" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/cartoon_5.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+          <p>
+            <h2 class="title is-5"> <b> Video 2: Robot Manipulation, Liquid Pouring (3 References)</b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "The right robotic hand holds a transparent glass bottle partially filled with yellow liquid resembling juice. The camera focuses on the intricate mechanical joints as the right robotic hand tilts the bottle with fine motor control, pouring the liquid smoothly into the red mug on the small table without spilling."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/arm_cup_juice.png" alt="Reference Image 43" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/arm_cup_juice.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+         
+         
+           <p>
+            <h2 class="title is-5"> <b> Video 3: Aerial View Simulation (3 References)</b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "A high-angle, third-person aerial tracking shot follows a silver Tesla Cybertruck as it drives along a winding, S-curved asphalt road through a dense, green forest. Flying in perfect formation directly above the vehicle is a person wearing a blue and black wingsuit. The camera maintains its high vantage point, capturing both the Cybertruck navigating the curves of the road below and the wingsuit flyer mirroring its exact path in the air."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/4_flysuit_tesla.png" alt="Reference Image 49" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/4_flysuit_tesla.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+          <p>
+            <h2 class="title is-5"> <b> Video 4: Multi-Vehicle Autonomous Driving (3 References)</b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "The scene begins from a **first-person perspective inside a modern autonomous electric car**, showing the sleek interior with a large digital dashboard displaying a navigation route and vehicle speed. An ambulance car has a white body with red horizontal stripes and medical symbols (blue star of life) on the sides, with flashing red and blue lights leads the flow of traffic. On the left, a red convertible car is following the ambulance car."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/am_car_2obj.png" alt="Reference Image 31" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/am_car_2obj.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+          <p>
+            <h2 class="title is-5"> <b> Video 5: Filmmaking, Triple-Product Group Showcase (4 References)  </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "The video begins with a wide shot of three young individuals standing side by side in front of an aged stone corridor. Each of them is dressed in dark robes with red-and-gold accents, creating a cohesive visual identity. The young man on the left, with short dark hair and round glasses, raises his left hand to present a sleek black Apple iPhone—its reflective dual cameras glint under natural light, highlighting precision engineering. The woman in the center, her light brown hair tied loosely, holds a mixed reality headset with both hands, turning it slightly to show its curved glass visor and fabric headband as light passes across its surface. The young man on the right, with medium-length hair, places a silver MacBook on the moss-covered stone ledge, opening it partway to reveal its metallic sheen and engraved logo."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/potter_3obj.png" alt="Reference Image 42" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/potter_3obj.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+          <p>
+            <h2 class="title is-5"> <b> Video 6: Filmmaking, Human-animal Interation (2 References) </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "Cinematic medium shot tracking through a dense, lush jungle environment filled with large trees and green foliage. A large, powerfully built tiger with orange and black stripes walks steadily through the undergrowth. Riding bareback on the tiger is the muscular, shirtless man with long hair, wearing simple brown pants. He sits upright with a commanding and confident posture, moving effortlessly with the animal. The camera follows them, capturing the man's focused expression and his clear dominion over the powerful predator, portraying him as the undisputed king of the forest."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/16_tarzan_tiger.png" alt="Reference Image 4" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/16_tarzan_tiger.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+
+
+          <p>
+            <h2 class="title is-5"> <b> Video 7: Underwater Exploration (3 References) </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "The video begins from a first-person perspective, simulating the view of someone snorkeling underwater. The setting is a vibrant, clear-blue coral reef, with sunlight filtering through the water's surface from above. As the viewer "swims" forward, a large shark, suddenly glides past from one side of the frame to the other. Following this, a sea turtle with a brown patterned shell, gracefully swims by in the opposite direction."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/30_seaturtle_shark.png" alt="Reference Image 14" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/30_seaturtle_shark.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+     
+          <p>
+            <h2 class="title is-5"> <b> Video 8: Product Showcasing (2 References)  </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "A medium shot features Akira Toriyama, smiling and wearing glasses, holding the red-haired Super Saiyan God Goku figure. The figure, depicted in its orange gi, stands just a bit larger than Akira's hands, appearing slightly larger than his hand as he holds it. Toriyama gestures towards the figure, looking directly at the camera with an enthusiastic expression, praising it by saying, \"it is very good,\" clearly promoting it for sale to the audience."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/12_goku.png" alt="Reference Image 1" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/12_goku.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+
+          
+
+          <p>
+            <h2 class="title is-5"> <b> Video 9: Robot-Human Interaction (2 References) </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "A wide shot captures a presentation stage. On the left, Sam Altman stands wearing a grey sweatshirt and dark jeans. On the right, Microsoft CEO Satya Nadella stands wearing a blue t-shirt and dark jeans. Positioned in the center of the stage, between the two men, is a black and white humanoid robot. The robot begins to move, turning and walking smoothly towards Sam Altman on the left. The robot stops in front of him and extends its right hand. Sam Altman reaches out with his right hand, and they engage in a handshake, while Satya Nadella looks on from the right side of the stage."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/15_altman_robot.png" alt="Reference Image 3" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/15_altman_robot.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+
+          
+
+
+          <p>
+            <h2 class="title is-5"> <b> Video 10: Historical Figures Meeting (3 References) </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "The video opens in a bright, modern conference room with a long white table. The entire scene is rendered in black and white. Seated at the table are Albert Einstein, and Mahatma Gandhi. The camera focuses on a medium shot of the two figures, slowly panning and cutting between them as they engage in an earnest conversation about world peace. Einstein is shown gesturing thoughtfully, while Gandhi, wearing his glasses and robes, speaks with a calm and focused demeanor, their expressions conveying the importance of their discussion. The stark, contemporary setting contrasts with the historical, black and white figures, highlighting the timeless significance of their ideas."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/19_ghandi_einstein.png" alt="Reference Image 5" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/19_ghandi_einstein.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+
+          <p>
+            <h2 class="title is-5"> <b> Video 11: First-Person Driving (2 References) </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "The video opens from a first-person driver's perspective, navigating a multi-lane highway during a heavy downpour. The road is slick with rain, and visibility is poor due to fog and the spray from surrounding cars. Suddenly, a bright red Ferrari F8 Tributo aggressively accelerates from an adjacent lane. The sports car swerves sharply, cutting directly in front of the camera's vehicle with very little space. The camera focuses on the rear of the red Ferrari, its distinctive twin taillights glowing, as it kicks up a massive plume of water and road spray, momentarily blinding the driver before it speeds off into the misty conditions."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/20_car_in_rain.png" alt="Reference Image 6" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/20_car_in_rain.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+          <p>
+            <h2 class="title is-5"> <b> Video 12: Anime Battle Scene (3 References)</b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "Film-quality, high-frame-rate animation with dynamic energy effects and strong motion emphasis. The scene takes place in an otherworldly alien landscape featuring green skies, floating clouds, and sparse blue trees extending across the rocky terrain. In the center-left, a muscular fighter with spiky blue hair and an orange martial arts uniform powers up, his aura glowing intensely with blue light that distorts the air around him. He thrusts his open palm forward, unleashing a rapid barrage of energy punches and shockwaves that ripple through the ground. On the right, a bald hero dressed in a yellow jumpsuit with red gloves and boots stands calmly with arms raised defensively, his white cape fluttering from the impact. The camera alternates between wide shots showing explosive energy waves colliding, and close-ups capturing the fierce expressions and precise hand movements of both fighters. The lighting shifts with each attack—blue flashes illuminating the scene while dust and debris swirl under their immense power, emphasizing their superhuman speed and strength in a high-intensity duel."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/23_one_punch_goku_anime.png" alt="Reference Image 9" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/23_one_punch_goku_anime.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+
+
+          
+
+          <p>
+            <h2 class="title is-5"> <b> Video 13: Blending of Game and Real-world (2 References)</b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "High-quality, cinematic video. The scene opens on a wide shot identical to the main image: Arthur Morgan, in his cowboy hat, sits atop his brown and white pinto horse on a grassy overlook, rifle in hand. He gazes over a valley toward distant, snow-capped mountains. A strange, deafening mechanical roar echoes through the valley. Arthur's head snaps up, his expression turning from calm to confused as he searches the sky. The camera cuts to follow the source of the noise: a modern United Airlines passenger jet, starkly out of place, flying erratically and dangerously low. Smoke billows from one of its engines. A medium shot captures Arthur's utter disbelief. The camera then tracks the airplane as it careens downward, disappearing behind a distant mountain ridge. A moment of silence is broken by a massive, fiery explosion, sending a plume of thick black smoke billowing into the sky. The video ends on a tight shot of Arthur's face, frozen in shock as he witnesses the impossible crash."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/28_red_dead_redemption.png" alt="Reference Image 13" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/28_red_dead_redemption.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+
+          <p>
+            <h2 class="title is-5"> <b> Video 14: Robot-Animal Interaction (3 References) </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "High-quality, cinematic video. The scene opens with a wide shot of the humanoid Tesla robot standing in the middle of a vast, rolling green field under a clear blue sky. A small, golden retriever puppy is sitting on the grass near the robot's feet. The camera zooms in to a medium shot as the robot slowly and deliberately raises its articulated hand and lowers it toward the puppy. A close-up shot follows, focusing on the robot's black and white mechanical fingers making gentle contact and stroking the puppy's soft, light-colored fur. The camera may pan slightly to show the puppy's reaction, such as wagging its tail or leaning into the touch."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/38_robot_dog.png" alt="Reference Image 18" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/38_robot_dog.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+
+
+
+          <p>
+            <h2 class="title is-5"> <b> Video 15: Character Showdown (3 References) </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "A wide shot establishes a bright, sunlit landscape of rolling green hills and a grassy field with a dirt path, under a blue sky with white clouds. The camera moves forward to focus on two small, 3D animated figures standing in the field. On the left, Crayon Shin-chan, wearing a yellow shirt, blue shorts, and a green cape, strikes a determined, heroic pose with his right fist raised. On the right, the figure of Nezha stands in a low, intense martial arts stance, ready for action. Both characters hold their distinct, dynamic poses against the peaceful, scenic backdrop."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/35_shinchan_nezha.png" alt="Reference Image 16" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/35_shinchan_nezha.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+
+          <p>
+            <h2 class="title is-5"> <b> Video 16: Action Figure Commercial (2 References) </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "A professional, commercial-style shot opens with the One Punch Man action figure standing heroically in the center of a desolate, destroyed city. The background is filled with smoldering rubble, debris, and the silhouettes of crumbling buildings. The camera slowly pans around the figure, highlighting its iconic yellow suit, red gloves, and flowing white cape. It then pushes in for a dramatic low-angle shot, focusing on the figure's powerful clenched-fist posture, capturing the meticulous detail of the product against the chaotic backdrop."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/36_onepunch.png" alt="Reference Image 17" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/36_onepunch.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+
+          
+
+
+          <p>
+            <h2 class="title is-5"> <b> Video 17: First-Person Underwater Swimming (2 References) </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "A dynamic first-person point of view from a swimmer moving through clear, turquoise ocean water. Sunlight filters down from the surface, casting light patterns on the swimmer's arms as they pull through the water over a sandy seabed. As the swimmer glides forward, a large tiger shark is seen swimming gracefully in the mid-distance. In the same frame, a green sea turtle with a distinctive brown and orange shell glides calmly. The camera maintains this first-person perspective as the swimmer continues to swim forward, passing by the remarkable sight of the shark and turtle coexisting in the water."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/39_undersea_swim.png" alt="Reference Image 19" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/39_undersea_swim.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+<!-- 
+          <p>
+            <h2 class="title is-5"> <b> Video 20: Multi-Object Underwater Scene </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "A wide-angle underwater shot captures a vibrant, sunlit ocean scene with a rippling sandy seabed below. A large, dark submarine glides steadily through the blue water, serving as the "vessel" in the mid-ground. Simultaneously, a tiger shark, its distinct stripes visible, swims purposefully near the sandy bottom. A green sea turtle, its brown and orange shell catching the dappled sunlight, paddles gracefully with its flippers, moving across the foreground. The camera pans slowly, keeping all three elements—the submarine, the shark, and the turtle—in frame as they navigate the same stretch of ocean."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/40_shark_vessel_turtle.png" alt="Reference Image 20" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/40_shark_vessel_turtle.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p> -->
+
+
+          <!-- <p>
+            <h2 class="title is-5"> <b> Video 18: Multi-Character Product Showcase </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "A high-quality, cinematic video showcasing three detailed action figures positioned together against the backdrop of a destroyed, smoldering city. The camera dynamically pans and focuses on each figure. It highlights the One-Punch Man figure standing with his white cape flowing and a red-gloved fist raised. Next, it captures the Spider-Man figure in a low, agile crouching pose, showing off the intricate details of his suit. Finally, it features the imposing Venom figure, standing tall and menacingly, displaying its detailed muscular texture. The shot emphasizes the dynamic postures and high-quality detail of each product, as if they are facing off amidst the rubble."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/41_3_toys.png" alt="Reference Image 21" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/41_3_toys.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p> -->
+
+
+          <p>
+            <h2 class="title is-5"> <b> Video 18: First-Person Shooter Gameplay (2 References)  </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "The video begins from an intense, first-person perspective, capturing a player holding an assault rifle on a grassy slope overlooking a coastal settlement, reminiscent of a PUBG setting. The camera pans slightly, scanning the area, before a vibrant red and black sports car suddenly speeds into the frame on a path below. The player's view immediately snaps towards the car, bringing the rifle's iron sights into focus. The camera shakes violently with simulated recoil as the player fires at the vehicle, attempting to track and neutralize the moving target."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/44_gamecars.png" alt="Reference Image 22" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/44_gamecars.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+<!-- 
+          <p>
+            <h2 class="title is-5"> <b> Video 23: First-Person Shooter Gameplay </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "A high-definition, first-person video game perspective, viewed through the player's eyes holding a rifle equipped with a holographic sight. The player is standing on the dirt shoulder of an empty, cracked asphalt road. In the distance, a red and black muscle car drives rapidly down the road, straight towards the player. The player raises the rifle, aims down the sight, and begins to fire at the approaching vehicle. Sparks and smoke erupt from the car's engine block upon impact, and it quickly bursts into bright orange flames, continuing to speed forward as a fiery wreck."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/45_gamecars_shot.png" alt="Reference Image 23" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/45_gamecars_shot.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p> -->
+
+<!-- 
+          <p>
+            <h2 class="title is-5"> <b> Video 24: Gaming Scene with Product Placement </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "A video scene unfolds in a vast, golden wheat field under a blue sky, with a red smoke flare billowing from a supply crate in the mid-ground. In the foreground, the character Wukong, in his ornate armor, stands next to a soldier wearing a helmet and tactical gear. The soldier holds a blue iPhone, gesturing with it, while Wukong holds a VR headset. The two characters are positioned side-by-side, appearing to be in an animated discussion, comparing and talking about the two different technology products they are holding."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/47_game_daihuo.png" alt="Reference Image 24" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/47_game_daihuo.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p> -->
+
+
+          <p>
+            <h2 class="title is-5"> <b> Video 19: Racing Game Simulation (3 References)  </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "A thrilling first-person perspective from the cockpit of a race car, showing the driver's gloved hands gripping the steering wheel. The car speeds down a wide racetrack, rapidly closing in on two cars ahead: a white sedan and a yellow modified hatchback. These two cars are actively dueling for position, with the yellow modified hatchback seen attempting to weave and overtake the white sedan as the POV driver follows closely behind the battle."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/48_car_racing.png" alt="Reference Image 25" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/48_car_racing.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+<!-- 
+          <p>
+            <h2 class="title is-5"> <b> Video 26: Character Lineup Showcase </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "A wide, cinematic shot establishes the scene: a nighttime city skyline under a full moon, prominently featuring the illuminated Avengers Tower. In the foreground, standing in a line, are four distinct figures, each captured in their iconic "power pose" and exhibiting subtle movements. First is Saitama, standing confidently in his yellow hero suit and white cape. Next to him is the massive, black-suited Venom, his muscular and veiny form shifting slightly. Beside him, Spider-Man is crouched low in his red, blue, and gold Iron Spider suit, poised for action. Finally, Monkey D. Luffy stands in a dynamic martial arts stance, wearing his straw hat and red shirt. The camera holds on this line-up as each character makes small, characteristic movements to showcase their power against the urban backdrop."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/50_4_toys.png" alt="Reference Image 26" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/50_4_toys.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p> -->
+
+<!-- 
+          <p>
+            <h2 class="title is-5"> <b> Video 8: Action Figure Animation </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "A medium shot captures Akira Toriyama, smiling warmly and wearing glasses and a blue bomber jacket, sitting in a relaxed indoor setting. He holds two 15cm action figures: one of Goku in his Super Saiyan Blue form and the other of Frieza. With a playful expression, Toriyama uses his hands to animate the figures, moving them towards and away from each other to simulate an epic battle, as if bringing his own creations to life. The camera focuses on this mock fight, capturing the dynamic movements of the figures controlled by their creator."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/22_frieza_goku.png" alt="Reference Image 8" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/22_frieza_goku.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p> -->
+
+
+          <!-- <p>
+            <h2 class="title is-5"> <b> Video 27: Racing Gameplay Simulation </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "The video unfolds from a thrilling first-person perspective, placing the viewer in the driver's seat of a race car. We see the driver's hands with all black racing gloves, gripping the detailed carbon-fiber steering wheel as the car speeds down the track. Directly ahead, a silver sports car with distinctive round taillights and a dark navy blue sports car with a large rear spoiler are in a heated battle. The two cars are driving side-by-side, aggressively weaving as they try to pass one another, while the FPV car rapidly closes in on them from behind."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/53_game_car_racing.png" alt="Reference Image 27" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/53_game_car_racing.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p> -->
+
+
+          <p>
+            <h2 class="title is-5"> <b> Video 20: Driving Simulation (3 References) </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "A high-speed, first-person video captured from the driver's seat of a car, showing the dashboard and hands gripping the steering wheel. The camera pursues two other vehicles driving aggressively through city streets. The targets are a vibrant red supercar, seen from the rear with its distinctive louvered engine cover and wide black grilles, and a sleek grey sports coupe, also seen from the rear with its quad exhaust pipes. These two cars weave rapidly through traffic, accelerating and braking hard as if in a race, while the camera car attempts to follow closely behind them."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/54_driving_simulation.png" alt="Reference Image 28" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/54_driving_simulation.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+
+          <p>
+            <h2 class="title is-5"> <b> Video 21: Rare Cases in Autonomous Driving, with Aircraft (3 References)</b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "The scene begins from a **first-person perspective inside a modern autonomous electric car**, showing the sleek interior with a large digital dashboard displaying a navigation route and vehicle speed. The car travels rapidly along a multi-lane single-direction highway under clear daylight. Ahead, an **ambulance with flashing red and blue emergency lights** speeds in the same direction. Far ahead, an F-22 Raptor fighter jet aircraft descends rapidly, deploying its landing gear and aligning precisely with the center of the highway. The car's sensors and autopilot react instantly, adjusting speed and lane position to accommodate the incoming aircraft."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/airplane_am_car.png" alt="Reference Image 29" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/airplane_am_car.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+
+          <p>
+            <h2 class="title is-5"> <b> Video 22: Lunar Encounter Scene (2 References) </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "High-definition, film quality. The video opens on the desolate, grey landscape of the Moon, with the Lunar Module and American flag visible in the background. An astronaut in a bulky white spacesuit is seen taking slow, bounding steps across the dusty surface. The camera pans slightly to reveal a second figure entering the frame: a tall, slender, grey alien with a large head and oversized black eyes. The alien walks steadily and directly towards the astronaut and then shakes the hand with the astronaut."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/alien.png" alt="Reference Image 30" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/alien.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+<!-- 
+          <p>
+            <h2 class="title is-5"> <b> Video 31: Multi-Vehicle Autonomous Driving </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "The scene begins from a **first-person perspective inside a modern autonomous electric car**, showing the sleek interior with a large digital dashboard displaying a navigation route and vehicle speed. An ambulance car has a white body with red horizontal stripes and medical symbols (blue star of life) on the sides, with flashing red and blue lights leads the flow of traffic. On the left, a red convertible car is following the ambulance car."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/am_car_2obj.png" alt="Reference Image 31" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/am_car_2obj.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p> -->
+
+
+          <p>
+            <h2 class="title is-5"> <b> Video 23: Robotic Manipulation (2 References)  </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "Film-quality, laboratory lighting with realistic robotic motion and object interaction. A **wooden cube block** rests on the tabletop in front of the robot. The camera captures a close-up as the robotic arm activates, its white and gray joints rotating smoothly while the orange-tipped gripper opens precisely. The robot's gripper lowers toward the wooden cube, aligning its claws with the edges for an accurate grasp. After gripping securely, the arm lifts the cube vertically and moves the cube above a **wooden tray**, gently lowering it into the center before releasing and retracting. The video emphasizes the robot's precision, dexterity, and coordinated motion control throughout the entire pick-and-place sequence."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/arm_wooden.png" alt="Reference Image 32" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/arm_wooden.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+<!-- 
+          <p>
+            <h2 class="title is-5"> <b> Video 33: Four-Character Anime Crossover </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "The video begins with a wide shot of a cherry blossom-lined street, petals gently floating through the air as sunlight filters between the trees. Three iconic anime characters walk side by side from the distance toward the camera. On the far left, Naruto Uzumaki in an orange jumpsuit walks confidently with arms folded; next to him, Monkey D. Luffy wearing a red open shirt, blue shorts, and a straw hat smiles energetically, waving with one hand while a cheerful yellow creature, Pikachu, sits on his shoulder, flicking its tail with sparks of playful energy. To their right, Goku with spiky black hair and a cheerful expression, wearing an orange martial arts gi with a blue undershirt, belt, wristbands, and boots.  As they move closer, the camera slowly pans upward, capturing their friendly gestures and animated expressions under the falling petals. The motion and color transitions highlight a sense of camaraderie and lighthearted adventure against the serene spring backdrop."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/cartoon_4.png" alt="Reference Image 33" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/cartoon_4.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p> -->
+
+
+
+          <p>
+            <h2 class="title is-5"> <b> Video 24: Game Simulation, Prehistoric Hunting Scene (3 References)  </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "A cinematic shot, set in the vast, muddy, prehistoric landscape, captures a surreal scene. The cowboy is firmly seated on the back of the massive, roaring T-rex, using it as a mount. The camera, Arthur, tracks them from a low angle as the T-rex walks with heavy, purposeful steps towards the towering, long-necked Patagotitan mayorums (sauropods) seen in the background by the water. Arthur raises his revolver, takes aim at one of the Patagotitan mayorums, and fires, the action clear and focused."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/32_reddead_dinosaur.png" alt="Reference Image 15" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/32_reddead_dinosaur.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+
+        
+
+
+          <p>
+            <h2 class="title is-5"> <b> Video 25: Product Handoff Scene (3 References)  </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "A man wearing a red T-shirt layered over a long-sleeve purple shirt gently and slowly hands over a graphics card labeled \"RTX 5090\" to another man dressed in dark blue long-sleeved shirt and black pants. The man dressed in dark blue long-sleeved shirt and black pants looks at the graphics card labeled \"RTX 5090\" with mild curiosity and intrigue."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/facebook.png" alt="Reference Image 35" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/facebook.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+
+          <!-- <p>
+            <h2 class="title is-5"> <b> Video 36: Autonomous Driving with Aerial Vehicle </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "The scene begins from a **first-person perspective inside a modern autonomous electric car**, showing the sleek interior with a large digital dashboard displaying a navigation route and vehicle speed. The car travels rapidly along a multi-lane highway under clear daylight. Ahead, an **ambulance with flashing red and blue emergency lights** speeds in the same direction, its sirens faintly audible through the car's cabin. The autonomous system precisely maintains its lane while adjusting speed automatically in response to the ambulance ahead. A modern fighter jet aircraft, F-22 Raptor, is flying over in the sky."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/fds_am_f22.png" alt="Reference Image 36" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/fds_am_f22.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p> -->
+
+
+          <!-- <p>
+            <h2 class="title is-5"> <b> Video 37: Autonomous Emergency Vehicle Following </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "The scene begins from a **first-person perspective inside a modern autonomous electric car**, showing the sleek interior with a large digital dashboard displaying a navigation route and vehicle speed. The car travels rapidly along a multi-lane highway under clear daylight. Ahead, an **ambulance with flashing red and blue emergency lights** speeds in the same direction, its sirens faintly audible through the car's cabin. The autonomous system precisely maintains its lane while adjusting speed automatically in response to the ambulance ahead."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/fds_ambulence.png" alt="Reference Image 37" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/fds_ambulence.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p> -->
+
+
+          <p>
+            <h2 class="title is-5"> <b> Video 26: Three-Vehicle Autonomous Driving (4 References)  </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "The video begins from a first-person view inside an autonomous car speeding along a multi-lane same-direction highway. There are three vehicles driving in the same direction. Ahead, an ambulance with flashing red and blue lights leads the flow of traffic. A red Ferrari convertible sports car accelerates rapidly in the leftmost lane. On the left of the red Ferrari convertible sports car, a gas tanker truck has a large cylindrical metal tank mounted on the back, driving slowly on the road."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/fsd_3cars.png" alt="Reference Image 38" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/fsd_3cars.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+
+          <p>
+            <h2 class="title is-5"> <b> Video 27: Real-world, Dual-Product Demonstration (3 References)   </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "Film-quality, studio-lit scene in a robotics lab environment. The young man, wearing a light blue button-up shirt, sits confidently at his workspace surrounded by robotics hardware, simulation software, and coding monitors. He uses his **left hand to prominently showcase a sleek black Apple iPhone**, its reflective surface and dual-camera module catching subtle light highlights. With his **right hand, he presents a mixed reality headset**, its curved visor and intricate strap details gleaming under the lab's warm illumination."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/levi_2obj.png" alt="Reference Image 39" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/levi_2obj.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+
+          <p>
+            <h2 class="title is-5"> <b> Video 28: Multi-Product Comparison (3 References)  </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "In a vibrant shoe store, a woman holds up an Adidas ZX Flux sneaker with a colorful geometric pattern, while two men on either side showcase a neon green Nike Flyknit and another shoe. The focus remains on the Adidas sneaker, which appears to be the central point of discussion and analysis. The Nike Flyknit adds to the variety of footwear options presented in the video."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/shoes.png" alt="Reference Image 45" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/shoes.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+
+
+
+          <p>
+            <h2 class="title is-5"> <b> Video 29: Filmmaking, Dual-Product Showcase (3 References) </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "The young man, dressed in a dark sweater layered over a collared shirt and a red-and-gold striped tie, sits at a long wooden table with an open book in front of him. He raises his left hand to clearly demonstrate a sleek black Apple iPhone, showcasing its dual-camera design and reflective surface under the warm indoor light. In his right hand, he presents a futuristic mixed-reality headset with a curved glossy visor and soft fabric strap, angled to emphasize its modern design and immersive capability. The camera focuses closely on the contrast between the classic academic setting and the cutting-edge technology, capturing the subtle expressions on his face as he explains and interacts with both devices in detail."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/potter_2obj.png" alt="Reference Image 41" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/potter_2obj.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+
+         
+
+
+      
+
+          <p>
+            <h2 class="title is-5"> <b> Video 30: Road Scene Simulation (2 References)  </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "Professional-quality video with rich details.  In the background, a green military tank with visible treads and a white star insignia moves slowly from left to right across the road behind the stop sign. The tank's treads rotate smoothly, kicking up light dust as it passes, while the sunlight reflects subtly off its metal surface. Power lines, trees, and parked cars frame the street, giving a sense of scale and normalcy contrasted with the imposing motion of the armored vehicle. The camera remains steady as the tank continues its traversal, maintaining the stop sign prominently in the foreground."
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/tank_intersection_2.png" alt="Reference Image 47" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/tank_intersection_2.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+
+          <p>
+            <h2 class="title is-5"> <b> Video 31: Dual-Object Handling (3 References)  </b> </h2>
+          </br>
+
+          <div class="columns is-centered">
+            <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+              <strong>Text Prompt</strong>: "An older man with curly gray hair, dressed in a brown blazer and red sweater, using his right hand to drink an apple juice while using his left hand to hold a Teddy Bear"
+           </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <h3 class="title is-6">Reference Image</h3>
+              <img src="./Evaluation/combined_images/yannis_bear_juice.png" alt="Reference Image 48" style="width: 100%; height: auto;">
+            </div>
+            <div class="column is-5">
+              <h3 class="title is-6">Generated Video</h3>
+              <video autoplay controls muted loop playsinline width="100%" height="auto">
+                <source src="./Evaluation/ours/yannis_bear_juice.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          </p>
+
+
+         
+
+
+
+        
+        
+           </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            The webpage template is borrowed from  <a
+              href="">nerfies</a> template.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function () {
+
+  /* A ─ Prompt card  ────────────────────────────────────────────────── */
+  $('div').filter(function () {
+    return $(this).children('strong').first().text().trim() === 'Text Prompt:';
+  }).addClass('prompt-box');
+
+  /* B ─ Reference image card (only the direct parent of the <img>) ──── */
+  $('.column img[alt^="Reference Image"]')
+    .parent('.column')          // the immediate column holding the image
+    .addClass('reference-box');
+
+  /* C ─ Video frame  ────────────────────────────────────────────────── */
+  $('video').addClass('video-frame');
+});
+</script>
+</body>
+</html>
