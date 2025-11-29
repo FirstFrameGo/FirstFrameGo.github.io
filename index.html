@@ -292,6 +292,39 @@
           </video>
 
 
+        
+          <div class="column">
+            <div class="content">
+              <div class="column has-text-centered">
+              <h2 class="title is-3">Comparison with Two-Stage Approach: <br>
+                 Image Composition → Image-to-Video Generation</h2>
+    
+              <div class="columns is-centered">
+                <div style="width: 1200px; height: auto; text-align: center; padding: 10px;">
+                  The two-stage approach first composes a single image with all desired subjects and then generates a video from it. The key differences are:
+                  1)  Our method remains <strong>end-to-end</strong>, fundamentally different from a two-stage pipeline, and benefits from well-known advantages such as can be further end-to-end finetuned and no error accumulation. 2) The two-stage setup (e.g., using Nano Banana, Qwen) locks spatial layout to the first composed image, limiting flexibility. In contrast, our approach supports <strong>dynamic spatial layouts over time, guided by the text prompt.</strong>  <br>
+For example, in the video below, the referenced shark appears later, <strong>not in the first frame of generated videos</strong>, driven by the temporal semantics of the prompt, which is not achievable with a two-stage pipeline.
+               </div>
+              </div>
+
+              <div class="columns is-centered">
+                <div class="column is-5">
+                  <h3 class="title is-6">First Frame</h3>
+                  <img src="./Evaluation/combined_images/30_seaturtle_shark.png" alt="First Frame 14" style="width: 100%; height: auto;">
+                </div>
+                <div class="column is-5">
+                  <h3 class="title is-6">Generated Video</h3>
+                  <video autoplay controls muted loop playsinline width="100%" height="auto">
+                    <source src="./Evaluation/ours/30_seaturtle_shark.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+
+              </div>
+            </div>
+          </div>
+
+
 
       <!-- Visual Effects. -->
       <div class="column">
